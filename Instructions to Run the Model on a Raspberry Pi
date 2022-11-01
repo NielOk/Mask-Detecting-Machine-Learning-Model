@@ -1,5 +1,7 @@
 First, get into your Raspberry Pi with your computer. 
 
+You are going to need a Raspberry Pi camera and attach it to your Raspberry Pi. 
+
 To run the model, follow these steps for now in the linux terminal.
 
 cd examples/lite/examples/object_detection/raspberry_pi

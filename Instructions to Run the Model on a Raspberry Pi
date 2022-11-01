@@ -1,0 +1,20 @@
+First, get into your Raspberry Pi with your computer. 
+
+To run the model, follow these steps for now in the linux terminal.
+
+cd examples/lite/examples/object_detection/raspberry_pi
+
+The line above moves us into the directory that has the file necessary to run our model.
+
+bash download.sh tmp
+
+This downloads an example model and labels that we will be changing.
+
+python3 detect_picamera.py \
+   --model /tmp/final_model.tflite \
+   --labels /tmp/coco_labels.txt
+
+This is the line of code we use to deploy our model. Remember, for the model, we have to make a copy of “final_model.tflite” and put it in our “tmp” folder. Also, we have to change the labels in the “coco_labels.txt” to make it so that there is only one label, called “Mask Wearing.” We have to connect the Raspberry Pi to a TV or a monitor, and this should work fine. 
+
+Notes: 
+Make sure final_model.tflite is not a text file.
